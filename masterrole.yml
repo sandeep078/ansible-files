@@ -1,0 +1,18 @@
+---
+- hosts: sandy
+  user: ubuntu
+  become_method: yes
+  sudo: yes
+  connection: ssh
+  pre_tasks:
+  - name: date start
+    command: date
+    register: timestamp_start
+  - debug: var=/home/ubuntu/test/timestamp_start
+  roles: 
+  - project
+  post_tasks:
+  - name: date end
+    command: date
+    register: timestamp_end
+  - debug: var=timestamp_end

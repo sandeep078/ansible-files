@@ -1,0 +1,10 @@
+- hosts: sandy
+  user: ubuntu
+  sudo: yes
+  connection: ssh
+  vars_files:
+  - variables/variables.yml
+  tasks:
+    - include: packages/package.yml
+    - include: commands/command.yml
+    - include: handlers/handler.yml

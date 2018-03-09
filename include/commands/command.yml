@@ -1,0 +1,2 @@
+- name: make sure lynx is installed and then log it
+  raw: apt list installed | grep lynx > /home/ubuntu/test/pack.log

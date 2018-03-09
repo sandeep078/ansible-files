@@ -1,0 +1,3 @@
+- name: install apache2
+  action: apt name={{ items }} state=installed	
+  notify: Restart apache2
