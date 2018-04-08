@@ -1,4 +1,4 @@
-- hosts: sandy
+- hosts: all
   user: ubuntu
   become_method: yes
   sudo: yes

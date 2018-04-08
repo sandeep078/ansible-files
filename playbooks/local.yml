@@ -5,6 +5,6 @@
   gather_facts: yes
   tasks:
   - name: ping please
-    local_action: command ping -c 4 172.31.83.220
+    local_action: command ping -c 4 172.31.82.112
   - name: install tree
     apt: pkg=tree state=latest

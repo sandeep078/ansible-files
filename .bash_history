@@ -455,3 +455,426 @@ nano main.yml
 ansible-playbook main.yml 
 nano variables/variables.yml 
 ansible-playbook main.yml 
+ssh ubuntu@172.31.83.220
+ls
+cd playbooks/
+ls
+nano play.yaml 
+ansible-playbook play.yaml --start-at-task='install tree'
+nano play.yaml 
+ansible-playbook play.yaml --start-at-task='install apache2'
+nano play.yaml 
+ansible-playbook play.yaml --start-at-task='install apache2'
+nano play.yaml 
+ansible-playbook play.yaml --start-at-task='install apache2'
+ansible-playbook play.yaml --step
+nano play.yaml 
+ansible-playbook play.yaml --step
+nano play.yaml 
+ansible-playbook play.yaml --step
+nano promplay.yml
+ansible-playbook promplay.yml 
+ansible-playbook promplay.yml --extra-vars "hosts=sandy user=ubuntu pkg=telnet"
+nano promplay.yml
+ansible-playbook promplay.yml --extra-vars "hosts=sandy user=ubuntu pkg=telnet"
+ansible-playbook promplay.yml --extra-vars "hosts=sandy user=ubuntu pkg=telnet,apache2,tree"
+nano test.yml
+nano test.conf.j2
+nano test.yml 
+ansible-playbook test.yml 
+nano test.yml 
+ansible-playbook test.yml 
+nano test.yml 
+ansible-playbook test.yml 
+nano test.yml 
+cp test.yml local.yml
+nano local.yml 
+ansible-playbook local.yml 
+nano local.yml 
+ansible-playbook local.yml 
+nano local.yml 
+ansible-playbook local.yml 
+nano local.yml 
+ansible-playbook local.yml 
+nano local.yml 
+ansible-playbook local.yml 
+nano delegate.yml
+ansible-playbook delegate.yml 
+nano play.yaml 
+ls
+nano loop.yml 
+nano newplay.yaml 
+nano docker.yml
+ansible-playbook docker.yml 
+nano docker.yml
+ansible-playbook docker.yml 
+curl
+sudo apt install curl -y
+nano repo.yml
+ansible-playbook repo.yml 
+nano repo.yml
+ansible-playbook repo.yml 
+nano repo.yml
+ansible-playbook repo.yml 
+nano repo.yml
+ansible-playbook repo.yml 
+nano repo.yml
+ansible-playbook repo.yml 
+nano repo.yml
+ansible-playbook repo.yml 
+nano repo.yml
+ansible-playbook repo.yml 
+nano repo.yml
+ansible-playbook repo.yml 
+nano repo.yml
+ansible-playbook repo.yml 
+nano repo.yml
+ansible-playbook repo.yml 
+nano docker.yml
+ansible-playbook repo.yml 
+ansible-playbook docker.yml 
+nano docker.yml
+ansible-playbook docker.yml 
+nano docker.yml
+ansible-playbook docker.yml 
+nano docker.yml
+ansible-playbook docker.yml 
+nano docker.yml
+nano repo.yml 
+ansible-playbook repo.yml 
+nano repo.yml 
+nano docker.yml 
+nano repo.yml 
+y
+ansible-playbook repo.yml 
+nano docker.yml 
+nano repo.yml 
+ansible-playbook repo.yml 
+nano repo.yml 
+ansible-playbook repo.yml 
+nano repo.yml 
+ansible-playbook repo.yml 
+nano repo.yml 
+ansible-playbook repo.yml 
+nano repo.yml 
+ansible-playbook repo.yml 
+nano repo.yml 
+ansible-playbook repo.yml 
+nano repo.yml 
+ansible-playbook repo.yml 
+nano repo.yml 
+ansible-playbook repo.yml 
+nano repo.yml 
+ansible-playbook repo.yml 
+ls
+mkdir docker
+mv docker.yml repo.yml docker
+ls
+cd docker/
+ls
+cd ..
+ls
+nano newplay.yaml 
+nano play.yaml 
+cd docker/
+nano repo.yml 
+ansible-playbook repo.yml 
+nano repo.yml 
+ansible-playbook repo.yml 
+nano repo.yml 
+ansible-playbook repo.yml 
+nano repo.yml 
+ansible-playbook repo.yml 
+clear
+nano repo.yml 
+ansible-playbook repo.yml 
+cd ../
+ls
+cd ../
+ls
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/sandeep078/ansible-files.git
+git push -u origin master
+ssh ubuntu@ 172.31.83.220
+ssh ubuntu@172.31.83.220
+ls
+cd project/
+ls
+cd 
+cd playbooks/docker/
+ls
+ansible-playbook repo.yml 
+docker
+scp -r repo.yml ubuntu@172.31.83.220:/home/ubuntu/test/
+ansible-playbook -i "localhost," repo.yml 
+nano repo.yml 
+sudo nano /etc/ansible/hosts 
+sudo service ansible restart
+ansible-playbook repo.yml 
+docker
+sudo -i
+groups
+groupadd vee
+sudo groupadd vee
+groups
+clear
+useradd -G vee munny
+sudo useradd -G vee munny
+sudo passwd vee
+sudo passwd munny
+usermod -a -G sandy munmy
+usermod -a -G sandy munny
+sudo usermod -a -G sandy munny
+sudo usermod -a -G sandy,root,ubuntu munny
+getent group
+sudo useradd sandy1
+sudo useradd sandy2
+sudo useradd sandy3
+sudo useradd sandy4
+su -i
+su
+docker
+sudo -i
+groups
+su -i
+docker
+sudo -i
+sudo -i
+ls
+cd playbooks/
+ls
+nano local.yml 
+ansible-playbook local.yml 
+nano local.yml 
+ansible-playbook local.yml 
+tree
+sudo apt remove tree -y
+tree
+sudo apt remove tree -y
+ansible-playbook local.yml 
+tree
+ansible sandy -u ubuntu -s -m apt -a "pkg=apache2 state=latest"
+ansible sandy -u ubuntu -s -m apt -a "pkg=apache2,treetree state=latest"
+ansible sandy -u ubuntu -s -m apt -a "pkg=apache2,tree state=latest"
+ansible sandy -u ubuntu -s -m apt -a "pkg=apache2,tree state=absent"
+ansible sandy -u ubuntu -s -m apt -a "pkg=apache2,tree state=present"
+lynx
+sudo apt install lynx
+lynx http://35.174.174.148
+ansible sandy -u ubuntu -s -m service -a "pkg=apache2,tree state=restarted"
+ansible sandy -u ubuntu -s -m service -a "pkg=apache2,tree state=restart"
+ansible sandy -u ubuntu -s -m service -a "pkg=apache2 state=restarted"
+lynx http://35.174.174.148
+lynx http://35.174.174.148/sandy.hmtl
+qq
+ansible sandy -u ubuntu -s -m service -a "name=apache2 state=restarted"
+lynx http://35.174.174.148/sandy.hmtl
+lynx http://35.174.174.148/s
+lynx http://35.174.174.148/sandy.html
+ansible sandy -u ubuntu -s -m command "ls -al"
+ansible sandy -u ubuntu -s -m command -a "ls -al"
+ansible sandy -u ubuntu -s -m command -a "cat /var/www/html/sandy.html"
+ansible all -u ubuntu -s -m command -a "cat /var/www/html/sandy.html"
+nano /etc/ansible/hosts 
+sudo nano /etc/ansible/hosts 
+ansible all -u ubuntu -s -m command -a "cat /var/www/html/sandy.html"
+ansible all -u ubuntu -s -m shell -a "cat /var/www/html/sandy.html"
+ansible all -u ubuntu -s -m raw -a "cat /var/www/html/sandy.html"
+ansible all -u ubuntu -s -m raw -a "getent groups"
+ansible all -u ubuntu -s -m raw -a "getent group"
+ansible all -u ubuntu -s -m raw -a "getent group sandeep"
+ansible all -u ubuntu -s -m shell -a "getent group sandeep"
+ll
+ansible all -u ubuntu -s -m user -a "name=sande uid=07800 shell=/bin/bash"
+ansible all -u ubuntu -s -m user -a "name=sande state=absent remove=yes"
+ansible all -u ubuntu -s -m user -a "name=sandeep state=absent remove=yes"
+ansible all -u ubuntu -s -m user -a "name=vee,user1 state=absent remove=yes"
+ansible all -u ubuntu -s -m user -a "name=vee, user1 state=absent remove=yes"
+ansible all -u ubuntu -s -m user -a "name=vee state=absent remove=yes"
+ansible all -u ubuntu -s -m user -a "name=veer,user1 state=absent remove=yes"
+ansible all -u ubuntu -s -m user -a "name=veer state=absent remove=yes"
+ansible all -u ubuntu -s -m cron -a "name='cronjob' minute='2' job='ls -al /var > /root/vare.log'"
+sudo crontab -l
+ansible all -u ubuntu -s -m cron -a "name='cronjob' state=absent"
+ansible all -u ubuntu -s -m cron -a "name='cronjob' minute='2' job='ls -al /var > /vare.log'"
+ls
+cd
+ls
+cd crls
+cd playbooks/
+ansible all -u sandy -a "ls -al"
+ansible all -u sandy -s -a "ls -al"
+ansible all -u sandy -s -a "ls /etc"
+ansible all -u ubuntu -s -a "ls /etc"
+ansible all -u ubuntu -a "ls /etc"
+ansible all -u ubuntu -a "ls /var/www/"
+ansible all -u ubuntu -a "ls /var/www/html"
+ansible all -u ubuntu -a "cat /var/www/html/index.html"
+ansible all -u ubuntu -a "ls /etc/fstab"
+ansible all -u ubuntu -a "ls -al /etc/fstab"
+ansible all -u ubuntu -a "cat /etc/fstab"
+ansible sandy -u ubuntu -s -m apt -a "pkg=apache2,tree state=present" -t install-results
+ls
+cd install-results/
+ls
+cat 172.31.83.220 
+lsq
+q
+ls
+cd playbooks/
+ls
+mkdir database
+ls
+cd database/
+ls
+nano database.yml
+mkdir files
+ls
+nano database.yml 
+ls
+nano database.yml 
+cd files/
+nano mysql.sql
+exit
+ls
+cd playbooks/
+ls
+cd database/
+ls
+nano database.yml 
+ansible-playbook database.yml 
+nano database.yml 
+ansible-playbook database.yml 
+nano database.yml 
+ansible-playbook database.yml 
+vi database.yml 
+cp database.yml data.yml
+nano database.yml 
+ansible-playbook database.yml 
+nano database.yml 
+ansible-playbook database.yml 
+nano database.yml 
+ansible-playbook database.yml 
+nano database.yml 
+ansible-playbook database.yml 
+nano database.yml 
+ls files/
+cd files/
+ls
+touch mysql.sql
+ls
+cd ../
+ansible-playbook database.yml 
+nano database.yml 
+ansible-playbook database.yml 
+nano database.yml 
+ansible-playbook database.yml 
+nano database.yml 
+ansible-playbook database.yml 
+nano database.yml 
+ansible-galaxy
+ansible-galaxy list
+cd
+ansible-galaxy list
+cd playbooks/
+l
+ansible-galaxy list
+ansible-galaxy install apache
+ansible-galaxy install sandeep.apache
+ansible-galaxy install martinmicunda.common
+sudo ansible-galaxy install martinmicunda.common
+ls
+cd ../
+ls
+cd playbooks/
+ls
+sudo ansible-galaxy install martinmicunda.common
+cd /etc/ansible/
+s
+ls
+cd roles/
+ls
+cd martinmicunda.common/
+ls
+cd tasks/
+ls
+cat main.yml 
+cd ,,
+cd ..
+;s
+ls
+cat README.md 
+ls
+cd meta/
+cat main.yml 
+cd ../
+cd ../../
+$ ansible-galaxy install clayman74.docker
+sudo ansible-galaxy install clayman74.docker
+ls
+cd roles/
+ls
+cd clayman74.docker/
+ls
+cd tasks/
+ls
+cat main.yml 
+cat debian.yml 
+cd ..
+ls
+cd ..
+ls
+cd clayman74.docker/
+ls
+cd meta/
+ls
+nano main.yml 
+cd
+clear
+pwd
+ls
+ssh-copy-id -i chefmain.pem ubuntu@34.205.146.245
+cat chefmain.pem 
+clear
+ls
+ssh-copy-id  ubuntu@34.205.146.245
+ssh-keygen
+ssh-copy-id  ubuntu@34.205.146.245
+ls .ssh/
+rm .ssh/known_hosts
+ssh-copy-id  ubuntu@34.205.146.245
+ansible --version
+clear
+ls
+cd playbooks/
+ls
+cat packages.yml 
+cp local.yml find.myl
+nano find.myl 
+ansible-playbook find.myl 
+cp find.myl find.yml
+rm find.myl 
+ansible-playbook find.yml 
+nano find.yml 
+ansible-playbook find.yml 
+nano find.yml 
+ansible-playbook find.yml 
+nano find.yml 
+ansible-playbook find.yml 
+nano find.yml 
+ansible-playbook find.yml 
+clear
+sudo nano /etc/ansible/hosts 
+sudo nano .ssh/id_rsa.pub 
+ssh ubuntu@172.31.80.126
+ls .ssh
+sudo rm .ssh/known_hosts
+ls .ssh
+sudo rm .ssh/known_hosts] 
+ssh ubuntu@172.31.80.126
+nano .ssh/id_rsa.pub 
+cat .ssh/id_rsa.pub 
+ssh ubuntu@172.31.91.50
+ansible all -m ping
