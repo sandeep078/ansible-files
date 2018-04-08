@@ -1,0 +1,19 @@
+- name: installl apache2
+  apt: pkg=apache2 state=latest
+  notify: start apache2
+- name: install multiple softwares
+  apt: pkg={{ item }} state=latest
+  with_items: 
+  - telnet
+  - tree
+  - lynx
+  async: 300
+  poll: 3
+- name: verify status
+  command: service apache2 status
+  register: result
+- name: log for packages
+  command: apt list installed
+  register: installed_result
+- debug: var=result
+- debug: var=installed_result
